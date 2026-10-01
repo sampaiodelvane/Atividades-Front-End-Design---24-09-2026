@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8f7;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.destaque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #eaf1ef;
+}
+
+.texto-destaque {
+    width: 45%;
+}
+
+.texto-destaque h1 {
+    font-size: 32px;
+    color: #1a3c34;
+    margin-bottom: 15px;
+}
+
+.texto-destaque p {
+    line-height: 1.5;
+}
+
+.imagem-destaque {
+    width: 45%;
+    height: 250px;
+    background-color: #d8c4b2;
+    border-radius: 5px;
+}
+
+.depoimentos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.depoimentos h2 {
+    margin-bottom: 25px;
+    color: #1a3c34;
+}
+
+.depoimento-conteudo p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.faq {
+    padding: 30px 20px 80px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a3c34;
+}
