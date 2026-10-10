@@ -15,8 +15,12 @@
     <header class="cabecalho">
         <div class="logo">Grão Nobre</div>
         <nav class="menu">
-            <a href="#">Início</a>
-            <a href="#">Comprar</a>
+            <a href="#Inicio">Início</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">FAQ</a>
+            <button type="button" class="btn-comprar" data-bs-toggle="modal" data-bs-target="#modalPedido">
+                Comprar agora
+            </button>
         </nav>
     </header>
 
@@ -48,17 +52,12 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
+                        Qual a validade do café após aberto?
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <strong>O café orgânico</strong> aberto deve ser consumido em 1 a 2 semanas (para café moído) ou em 2 a 4 semanas (para café em grãos) para manter o melhor sabor e aroma. É importante armazená-lo em um recipiente hermético, em local fresco e seco, longe da luz solar direta e de odores fortes.
                     </div>
                 </div>
             </div>
@@ -66,17 +65,12 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Accordion Item #2
+                        Vocês entregam para todo o Brasil?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <strong>Sim!</strong> Enviamos para todas as regiões do Brasil, com prazo médio de 3 a 7 duas úteis dependendo da localidade.
                     </div>
                 </div>
             </div>
@@ -84,22 +78,57 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
+                        Posso cancelar minha assinatura quando quiser?
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It’s also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        <strong>Sim!</strong> Você pode cancelar sua assinatura a qualquer momento, sem carência.
                     </div>
                 </div>
             </div>
         </div>
         <!-- FIM DO CÓDIGO DO ACORDEÃO -->
+
+        <!-- MODAL DE PEDIDO -->
+
+    <div class="modal fade" id="modalPedido" tabindex="-1" aria-labelledby="modalPedidoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fs-4" id="modalPedidoLabel">Faça seu pedido:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body py-4">
+                <form>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="checkKit">
+                        <label class="form-check-label" for="checkKit">
+                            Kit de degustação
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="checkUmPacote">
+                        <label class="form-check-label" for="checkUmPacote">
+                            1 pacote de 250g
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkCincoPacotes">
+                        <label class="form-check-label" for="checkCincoPacotes">
+                            5 pacotes de 250g
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+                <button type="button" class="btn btn-primary px-4">Ir para o carrinho</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- FIM DO MODAL DE PEDIDO -->
 
     </section>
 
